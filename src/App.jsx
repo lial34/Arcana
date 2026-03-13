@@ -25,6 +25,70 @@ const TARO_CARDS = [
 	{ id: 'm19', num: 'XIX', name: 'The Sun', symbol: '☀', message: '환한 태양처럼 당신의 삶에 눈부신 축복이 가득합니다.', keywords: ['성공', '활력', '기쁨', '명확함'], desc: '모든 것이 명확해지고 활력이 넘칩니다. 당신의 앞날이 태양처럼 밝습니다.' },
 	{ id: 'm20', num: 'XX', name: 'Judgement', symbol: '🎺', message: '새로운 소명이 당신의 영혼을 깨우는 나팔소리를 울립니다.', keywords: ['부활', '결단', '해방', '새로운소명'], desc: '과거를 딛고 일어서야 할 때입니다. 새로운 변화의 부름에 응답하세요.' },
 	{ id: 'm21', num: 'XXI', name: 'The World', symbol: '🌍', message: '마침내 완성된 당신의 세계가 우주와 하나가 됩니다.', keywords: ['완성', '통합', '성취', '여행'], desc: '하나의 주기가 완성되었습니다. 성취를 만끽하고 새로운 도약을 준비하세요.' },
+
+	// Minor Arcana
+	{ id: 'm22', num: 'Wand I', name: 'Ace of Wands', type: 'Minor', symbol: '⚚', message: '새로운 열정의 불꽃이 당신의 길을 밝힙니다.', keywords: ['시작', '에너지', '영감', '창의성'], desc: '무언가 새로운 일을 시작할 강력한 동기부여와 창조적인 에너지가 솟구치는 시기입니다.' },
+	{ id: 'm23', num: 'Wand II', name: 'Two of Wands', type: 'Minor', symbol: '⚚', message: '이미 얻은 성취를 넘어 더 큰 세계를 바라보세요.', keywords: ['계획', '결정', '확장', '전망'], desc: '성공적인 첫발을 딛고 다음 단계로 나아가기 위해 세계를 조망하며 계획을 세우는 단계입니다.' },
+	{ id: 'm24', num: 'Wand III', name: 'Three of Wands', type: 'Minor', symbol: '⚚', message: '당신의 비전이 수평선 너머 새로운 기회를 불러옵니다.', keywords: ['탐험', '협력', '무역', '자신감'], desc: '준비된 계획이 실행에 옮겨졌으며, 더 넓은 시장이나 미지의 영역에서 성과가 오기를 기다리는 모습입니다.' },
+	{ id: 'm25', num: 'Wand IV', name: 'Four of Wands', type: 'Minor', symbol: '⚚', message: '평화로운 안식처에서 거둔 결실을 축하할 시간입니다.', keywords: ['축제', '안정', '화합', '휴식'], desc: '일시적인 목표 달성을 축하하며 가족이나 동료들과 기쁨을 나누는 평온하고 행복한 시기입니다.' },
+	{ id: 'm26', num: 'Wand V', name: 'Five of Wands', type: 'Minor', symbol: '⚚', message: '치열한 경쟁 속에서 당신의 역량을 증명해 보세요.', keywords: ['갈등', '경쟁', '혼란', '투쟁'], desc: '주변과의 사소한 다툼이나 경쟁이 발생할 수 있으나, 이는 성장을 위한 자극제가 될 것입니다.' },
+	{ id: 'm27', num: 'Wand VI', name: 'Six of Wands', type: 'Minor', symbol: '⚚', message: '당당한 승전보가 당신의 명예를 드높입니다.', keywords: ['승리', '성공', '인정', '자부심'], desc: '어려움을 극복하고 마침내 승리하여 주변 사람들로부터 찬사와 인정을 받게 되는 카드입니다.' },
+	{ id: 'm28', num: 'Wand VII', name: 'Seven of Wands', type: 'Minor', symbol: '⚚', message: '밀려드는 도전에 맞서 당신의 자리를 굳건히 지키세요.', keywords: ['방어', '용기', '저항', '유지'], desc: '유리한 위치를 선점했으나 이를 시기하는 도전들이 많습니다. 용기를 내어 끝까지 방어해야 합니다.' },
+	{ id: 'm29', num: 'Wand VIII', name: 'Eight of Wands', type: 'Minor', symbol: '⚚', message: '정체되었던 상황이 화살처럼 빠르게 진전됩니다.', keywords: ['속도', '진전', '소식', '이동'], desc: '지연되었던 일들이 급물살을 타며 빠르게 해결되거나 예상치 못한 좋은 소식이 날아듭니다.' },
+	{ id: 'm30', num: 'Wand IX', name: 'Nine of Wands', type: 'Minor', symbol: '⚚', message: '마지막 고비를 넘기기 위해 인내의 끈을 조이세요.', keywords: ['경계', '인내', '준비', '회복력'], desc: '지친 상태이지만 거의 다 왔습니다. 마지막 장애물을 경계하며 끝까지 버티는 끈기가 필요합니다.' },
+	{ id: 'm31', num: 'Wand X', name: 'Ten of Wands', type: 'Minor', symbol: '⚚', message: '무거운 책임감의 끝에서 목표가 머지않았습니다.', keywords: ['부담', '책임', '과부하', '완수'], desc: '혼자서 너무 많은 짐을 지고 있습니다. 힘들더라도 목표 지점이 코앞이니 조금만 더 힘을 내세요.' },
+	{ id: 'm32', num: 'Wand Page', name: 'Page of Wands', type: 'Minor', symbol: '⚚', message: '순수한 열정의 전령이 새로운 소식을 가져옵니다.', keywords: ['호기심', '소식', '열정', '탐구'], desc: '새로운 가능성에 눈을 뜨고 이를 배우고자 하는 순수하고 열정적인 에너지가 가득합니다.' },
+	{ id: 'm33', num: 'Wand Knight', name: 'Knight of Wands', type: 'Minor', symbol: '⚚', message: '불꽃 같은 기세로 목적지를 향해 거침없이 돌진하세요.', keywords: ['추진력', '모험', '성급함', '실행'], desc: '생각보다 행동이 앞서는 시기입니다. 넘치는 활력으로 상황을 빠르게 주도해 나갑니다.' },
+	{ id: 'm34', num: 'Wand Queen', name: 'Queen of Wands', type: 'Minor', symbol: '⚚', message: '따뜻한 카리스마가 주변을 활기차게 변화시킵니다.', keywords: ['자신감', '친절', '매력', '독립적'], desc: '밝고 긍정적인 에너지로 주변을 이끄는 리더십을 발휘하며 자신의 일을 멋지게 해냅니다.' },
+	{ id: 'm35', num: 'Wand King', name: 'King of Wands', type: 'Minor', symbol: '⚚', message: '확고한 비전과 통찰력이 성공의 지도를 그려냅니다.', keywords: ['리더십', '권위', '통제', '비전'], desc: '풍부한 경험과 결단력을 바탕으로 거대한 프로젝트나 상황을 완벽하게 통제하고 성공시킵니다.' },
+
+	// Minor Arcana - Cups (m36 ~ m49)
+	{ id: 'm36', num: 'Cup I', name: 'Ace of Cups', type: 'Minor', symbol: '🍷', message: '넘쳐흐르는 감정의 샘에서 진정한 사랑이 시작됩니다.', keywords: ['사랑', '기쁨', '영성', '평화'], desc: '마음의 평화와 새로운 인간관계, 혹은 깊은 감정적 만족감이 찾아오는 축복의 시기입니다.' },
+	{ id: 'm37', num: 'Cup II', name: 'Two of Cups', type: 'Minor', symbol: '🍷', message: '서로의 잔을 나누며 조화로운 교감을 시작하세요.', keywords: ['결합', '우정', '파트너십', '화합'], desc: '마음이 맞는 상대와 깊은 유대감을 형성하거나 평등하고 조화로운 계약이 성사됩니다.' },
+	{ id: 'm38', num: 'Cup III', name: 'Three of Cups', type: 'Minor', symbol: '🍷', message: '함께 나누는 기쁨이 당신의 삶을 더욱 풍요롭게 합니다.', keywords: ['축하', '커뮤니티', '우정', '결실'], desc: '친구들이나 동료들과 함께 성과를 축하하며 즐거운 시간을 보내는 화기애애한 시기입니다.' },
+	{ id: 'm39', num: 'Cup IV', name: 'Four of Cups', type: 'Minor', symbol: '🍷', message: '외부의 제안보다 내면의 권태를 먼저 살펴보세요.', keywords: ['권태', '명상', '불만족', '정체'], desc: '주어지는 기회에 무관심하거나 지루함을 느끼고 있습니다. 내면을 환기할 시간이 필요합니다.' },
+	{ id: 'm40', num: 'Cup V', name: 'Five of Cups', type: 'Minor', symbol: '🍷', message: '엎질러진 잔 뒤에 여전히 남은 희망을 바라보세요.', keywords: ['상실', '후회', '슬픔', '희망'], desc: '잃어버린 것에 집착하여 슬픔에 잠겨 있으나, 아직 당신 뒤에는 소중한 것들이 남아있음을 잊지 마세요.' },
+	{ id: 'm41', num: 'Cup VI', name: 'Six of Cups', type: 'Minor', symbol: '🍷', message: '그리운 기억의 향기가 지친 마음을 따뜻하게 안아줍니다.', keywords: ['추억', '순수', '재회', '선물'], desc: '과거의 순수했던 시절을 떠올리거나 그리운 사람으로부터 소식을 듣게 되어 마음이 치유됩니다.' },
+	{ id: 'm42', num: 'Cup VII', name: 'Seven of Cups', type: 'Minor', symbol: '🍷', message: '수많은 환상 속에서 당신의 진심을 담은 하나를 고르세요.', keywords: ['환상', '선택', '상상력', '혼란'], desc: '수많은 가능성과 유혹 앞에 서 있습니다. 겉모습에 속지 말고 실질적인 선택을 내려야 합니다.' },
+	{ id: 'm43', num: 'Cup VIII', name: 'Eight of Cups', type: 'Minor', symbol: '🍷', message: '미련을 뒤로하고 더 높은 진리를 찾아 떠날 때입니다.', keywords: ['이동', '포기', '내면의탐구', '변화'], desc: '감정적인 만족이 다하지 않았음에도 불구하고, 더 큰 성장을 위해 현재를 떠나 새로운 길로 향합니다.' },
+	{ id: 'm44', num: 'Cup IX', name: 'Nine of Cups', type: 'Minor', symbol: '🍷', message: '당신이 바랐던 소망이 마침내 현실이 되어 돌아옵니다.', keywords: ['만족', '소원성취', '행복', '성공'], desc: '감정적, 물질적으로 매우 만족스러운 상태입니다. 소망하던 일이 이루어져 기쁨을 만끽합니다.' },
+	{ id: 'm45', num: 'Cup X', name: 'Ten of Cups', type: 'Minor', symbol: '🍷', message: '무지개 아래 온 가족의 웃음소리가 가득 울려 퍼집니다.', keywords: ['가족애', '완성', '조화', '행복'], desc: '감정적 완성의 정점입니다. 주변 사람들과의 관계가 완벽하게 화합하며 행복의 절정에 다다릅니다.' },
+	{ id: 'm46', num: 'Cup Page', name: 'Page of Cups', type: 'Minor', symbol: '🍷', message: '감수성 풍부한 마음이 새로운 예술적 영감을 불러옵니다.', keywords: ['영감', '감수성', '직관', '친절'], desc: '뜻밖의 감동적인 소식을 접하거나 창의적인 아이디어가 떠오르는 순수한 시기입니다.' },
+	{ id: 'm47', num: 'Cup Knight', name: 'Knight of Cups', type: 'Minor', symbol: '🍷', message: '낭만적인 전령이 당신의 마음을 흔들 제안을 가져옵니다.', keywords: ['제안', '낭만', '이상주의', '매력'], desc: '부드럽고 매력적인 제안이 찾아옵니다. 자신의 감정을 솔직하게 표현하고 전달하기 좋은 때입니다.' },
+	{ id: 'm48', num: 'Cup Queen', name: 'Queen of Cups', type: 'Minor', symbol: '🍷', message: '깊은 바다와 같은 공감 능력이 상처받은 마음을 치유합니다.', keywords: ['공감', '치유', '모성애', '신비'], desc: '타인의 마음을 깊이 이해하고 보듬어주는 시기입니다. 자신의 직관이 매우 날카로워져 있습니다.' },
+	{ id: 'm49', num: 'Cup King', name: 'King of Cups', type: 'Minor', symbol: '🍷', message: '감정의 파도를 다스리는 평온한 지혜가 빛을 발합니다.', keywords: ['평정심', '자제력', '관용', '성숙'], desc: '격렬한 감정의 변화 속에서도 중심을 잃지 않고 냉철하고 따뜻하게 상황을 조율해 나갑니다.' },
+
+	// Minor Arcana - Swords (m50 ~ m63)
+	{ id: 'm50', num: 'Sword I', name: 'Ace of Swords', type: 'Minor', symbol: '⚔️', message: '명확한 논리가 복잡한 안개를 단칼에 걷어냅니다.', keywords: ['승리', '돌파', '명확함', '지성'], desc: '객관적인 판단력과 강한 정신력으로 문제를 해결하고 새로운 진실을 마주하게 됩니다.' },
+	{ id: 'm51', num: 'Sword II', name: 'Two of Swords', type: 'Minor', symbol: '⚔️', message: '팽팽한 대립 속에서 균형을 잡고 결단을 준비하세요.', keywords: ['막막함', '선택의기회', '균형', '정체'], desc: '두 가지 선택지 사이에서 고민하며 눈을 가리고 있는 상태입니다. 조만간 결단을 내려야 합니다.' },
+	{ id: 'm52', num: 'Sword III', name: 'Three of Swords', type: 'Minor', symbol: '⚔️', message: '비 온 뒤 땅이 굳어지듯, 아픔 뒤에 성장이 찾아옵니다.', keywords: ['비탄', '이별', '상처', '진실'], desc: '마음 아픈 소식이나 이별이 있을 수 있으나, 이는 성장을 위해 거쳐야 할 정화의 과정입니다.' },
+	{ id: 'm53', num: 'Sword IV', name: 'Four of Swords', type: 'Minor', symbol: '⚔️', message: '치열한 전투를 잠시 멈추고 영혼의 휴식을 허락하세요.', keywords: ['휴식', '회복', '명상', '정지'], desc: '더 나아가기 위해 반드시 필요한 멈춤입니다. 지친 몸과 마음을 정비하며 기력을 회복하세요.' },
+	{ id: 'm54', num: 'Sword V', name: 'Five of Swords', type: 'Minor', symbol: '⚔️', message: '상처뿐인 승리보다 가치 있는 양보를 생각할 때입니다.', keywords: ['패배감', '비겁함', '불화', '공허한승리'], desc: '수단과 방법을 가리지 않은 승리는 오히려 적을 만들고 마음을 공허하게 할 뿐입니다.' },
+	{ id: 'm55', num: 'Sword VI', name: 'Six of Swords', type: 'Minor', symbol: '⚔️', message: '격랑의 시기를 지나 고요한 치유의 땅으로 나아갑니다.', keywords: ['회복', '이동', '도움', '점진적변화'], desc: '힘든 시기를 뒤로하고 점차 상황이 나아지고 있습니다. 조력자의 도움을 받아 안전한 곳으로 향합니다.' },
+	{ id: 'm56', num: 'Sword VII', name: 'Seven of Swords', type: 'Minor', symbol: '⚔️', message: '정면 돌파보다 지혜로운 전략과 신중함이 필요합니다.', keywords: ['책략', '은밀함', '기만', '지혜'], desc: '모든 것을 드러내기보다 전략적으로 움직여야 할 때입니다. 주변의 속임수도 경계해야 합니다.' },
+	{ id: 'm57', num: 'Sword VIII', name: 'Eight of Swords', type: 'Minor', symbol: '⚔️', message: '당신을 옭아맨 포박은 사실 스스로 만든 환상입니다.', keywords: ['제약', '고립', '무기력', '출구'], desc: '사방이 막힌 것 같지만 실제로는 빠져나갈 틈이 있습니다. 스스로 만든 공포에서 벗어나세요.' },
+	{ id: 'm58', num: 'Sword IX', name: 'Nine of Swords', type: 'Minor', symbol: '⚔️', message: '어두운 밤의 불안은 해가 뜨면 사라질 안개와 같습니다.', keywords: ['악몽', '불안', '불면', '죄책감'], desc: '일어나지 않은 일에 대한 과도한 걱정으로 고통받고 있습니다. 실체 없는 불안에서 깨어나야 합니다.' },
+	{ id: 'm59', num: 'Sword X', name: 'Ten of Swords', type: 'Minor', symbol: '⚔️', message: '고통의 끝에서 비로소 새로운 아침의 서광이 비칩니다.', keywords: ['종결', '바닥', '배신', '새로운시작'], desc: '더 이상 나빠질 수 없는 최악의 상황이 끝났습니다. 이제 다시 일어서는 일만 남았습니다.' },
+	{ id: 'm60', num: 'Sword Page', name: 'Page of Swords', type: 'Minor', symbol: '⚔️', message: '날카로운 관찰력으로 주변의 변화를 예의주시하세요.', keywords: ['기민함', '경계', '정보', '정신적민첩함'], desc: '호기심과 경계심을 동시에 품고 상황을 분석합니다. 새로운 정보나 소식에 귀를 기울이세요.' },
+	{ id: 'm61', num: 'Sword Knight', name: 'Knight of Swords', type: 'Minor', symbol: '⚔️', message: '번뜩이는 지혜의 칼을 들고 목표를 향해 격렬하게 돌진하세요.', keywords: ['추진력', '직설적', '용기', '지적투쟁'], desc: '생각이 정리되면 망설임 없이 돌파해 나갑니다. 다만 독단적인 태도는 주의가 필요합니다.' },
+	{ id: 'm62', num: 'Sword Queen', name: 'Queen of Swords', type: 'Minor', symbol: '⚔️', message: '냉철한 판단력과 엄격한 정의가 진실의 길을 엽니다.', keywords: ['냉철함', '독립적', '지혜', '직설적'], desc: '감정에 휘둘리지 않고 객관적인 사실에 입각하여 상황을 판단하고 독립적인 길을 걷습니다.' },
+	{ id: 'm63', num: 'Sword King', name: 'King of Swords', type: 'Minor', symbol: '⚔️', message: '법과 원칙을 다스리는 지고의 지성이 세상을 조율합니다.', keywords: ['논리', '원칙', '권위', '냉정함'], desc: '질서와 공정함을 바탕으로 상황을 통제합니다. 냉정한 판단력이 필요한 중요한 결단에 유리합니다.' },
+
+	// Minor Arcana - Pentacles (m64 ~ m77)
+	{ id: 'm64', num: 'Pentacle I', name: 'Ace of Pentacles', type: 'Minor', symbol: '☪', message: '현실적인 풍요의 씨앗이 당신의 손바닥 위에 놓입니다.', keywords: ['번영', '기회', '안정', '실질적성과'], desc: '금전적인 행운이나 새로운 사업적 기회, 혹은 현실적인 이득이 시작되는 아주 좋은 징조입니다.' },
+	{ id: 'm65', num: 'Pentacle II', name: 'Two of Pentacles', type: 'Minor', symbol: '☪', message: '변화하는 상황 속에서 유연한 균형 감각을 발휘하세요.', keywords: ['조절', '융통성', '우선순위', '균형'], desc: '두 가지 일을 동시에 병행하거나 재정 상태를 조율해야 하는 시기입니다. 유연함이 핵심입니다.' },
+	{ id: 'm66', num: 'Pentacle III', name: 'Three of Pentacles', type: 'Minor', symbol: '☪', message: '협동과 기술의 조화가 완벽한 건축물을 세웁니다.', keywords: ['협력', '숙련', '팀워크', '인정'], desc: '서로 다른 분야의 전문가들과 힘을 합쳐 결과물을 만들어내며 자신의 능력을 인정받습니다.' },
+	{ id: 'm67', num: 'Pentacle IV', name: 'Four of Pentacles', type: 'Minor', symbol: '☪', message: '안정을 지키려는 마음이 때로는 변화를 가로막습니다.', keywords: ['소유욕', '인색함', '안정', '보수적'], desc: '현재 가진 것을 잃지 않으려 방어적입니다. 안정도 중요하지만 과한 집착은 흐름을 방해합니다.' },
+	{ id: 'm68', num: 'Pentacle V', name: 'Five of Pentacles', type: 'Minor', symbol: '☪', message: '추위 속에서도 서로를 의지하며 고난의 터널을 지나세요.', keywords: ['결핍', '상실', '어려움', '동반자'], desc: '금전적이나 정신적으로 힘든 시기입니다. 하지만 혼자가 아니니 서로 의지하며 이겨내야 합니다.' },
+	{ id: 'm69', num: 'Pentacle VI', name: 'Six of Pentacles', type: 'Minor', symbol: '☪', message: '나눔과 베풂의 미덕이 선순환의 에너지를 만듭니다.', keywords: ['관용', '자선', '보상', '공평'], desc: '준 만큼 돌려받거나, 혹은 누군가에게 베풀 기회가 생깁니다. 재정적 흐름이 원활해지는 시기입니다.' },
+	{ id: 'm70', num: 'Pentacle VII', name: 'Seven of Pentacles', type: 'Minor', symbol: '☪', message: '수확의 계절을 앞두고 정성을 다해 기다림을 배우세요.', keywords: ['인내', '투자', '중간점검', '보상'], desc: '이미 씨앗은 뿌려졌습니다. 결과가 나올 때까지 조급해하지 말고 차분히 기다리며 점검할 때입니다.' },
+	{ id: 'm71', num: 'Pentacle VIII', name: 'Eight of Pentacles', type: 'Minor', symbol: '☪', message: '성실한 장인의 마음가짐이 명작을 빚어냅니다.', keywords: ['숙련', '열정', '디테일', '반복적노력'], desc: '자신의 분야에서 묵묵히 실력을 쌓아가는 시기입니다. 꾸준한 노력이 결국 큰 가치를 만듭니다.' },
+	{ id: 'm72', num: 'Pentacle IX', name: 'Nine of Pentacles', type: 'Minor', symbol: '☪', message: '우아하고 평화로운 정원에서 풍요의 결실을 만끽하세요.', keywords: ['자립', '성공', '사치', '물질적안정'], desc: '주변의 도움 없이 스스로 이뤄낸 성과를 즐깁니다. 경제적으로 매우 여유롭고 품격 있는 상태입니다.' },
+	{ id: 'm73', num: 'Pentacle X', name: 'Ten of Pentacles', type: 'Minor', symbol: '☪', message: '대를 이어 전해질 견고한 왕국이 완성되었습니다.', keywords: ['전통', '가문', '부유함', '영속성'], desc: '개인의 성취를 넘어 가족 전체나 조직의 번영으로 이어지는 완벽하고 영구적인 성공을 뜻합니다.' },
+	{ id: 'm74', num: 'Pentacle Page', name: 'Page of Pentacles', type: 'Minor', symbol: '☪', message: '현실적인 목표를 향한 신중한 첫걸음을 내딛으세요.', keywords: ['연구', '신중함', '기회', '학습'], desc: '작지만 확실한 기회가 찾아옵니다. 차근차근 배우고 실천하며 미래를 설계하기 좋은 때입니다.' },
+	{ id: 'm75', num: 'Pentacle Knight', name: 'Knight of Pentacles', type: 'Minor', symbol: '☪', message: '느리지만 확실한 발걸음이 가장 안전한 목적지에 닿습니다.', keywords: ['책임감', '성실', '안전', '인내'], desc: '속도보다 정확성을 중시합니다. 변함없는 성실함으로 신뢰를 쌓으며 목표를 완수합니다.' },
+	{ id: 'm76', num: 'Pentacle Queen', name: 'Queen of Pentacles', type: 'Minor', symbol: '☪', message: '풍요로운 대지처럼 주변을 보살피는 넉넉함이 돋보입니다.', keywords: ['현실적', '자비', '양육', '실용주의'], desc: '정신적, 물질적 풍요를 모두 갖추고 주변 사람들을 따뜻하고 현실적으로 돌봐주는 시기입니다.' },
+	{ id: 'm77', num: 'Pentacle King', name: 'King of Pentacles', type: 'Minor', symbol: '☪', message: '성공의 정점에서 세상을 다스리는 든든한 힘을 발휘하세요.', keywords: ['번영', '수완', '실질적권위', '결실'], desc: '물질적인 세계에서 가장 큰 성공을 거둔 상태입니다. 확고한 재력과 지위를 바탕으로 안정감을 줍니다.' },
 ];
 
 const Navigation = ({ setView }) => (
@@ -169,6 +233,8 @@ const ReadingView = ({ setView }) => {
 	const [selectedCard, setSelectedCard] = useState(null);
 	const [shuffling, setShuffling] = useState(false);
 
+	const majorCards = TARO_CARDS.filter(card => card.type === 'Major');
+
 	const handleStartShuffle = () => {
 		if (!question.trim()) return;
 		setStep('shuffle');
@@ -222,7 +288,7 @@ const ReadingView = ({ setView }) => {
 					</div>
 					<div className="relative w-full overflow-hidden h-64 border-y border-white/5 bg-white/[0.01]">
 						<div className="flex gap-6 absolute left-0 animate-infinite-scroll py-8">
-							{[...TARO_CARDS, ...TARO_CARDS, ...TARO_CARDS].map((card, idx) => (
+							{[...majorCards, ...majorCards, ...majorCards].map((card, idx) => (
 								<div key={idx} className="w-32 h-48 rounded-xl border border-white/10 bg-[#0a0a12] flex flex-col items-center justify-center shadow-lg">
 									<Moon className="text-white/5 w-8 h-8" />
 								</div>
@@ -240,10 +306,10 @@ const ReadingView = ({ setView }) => {
 					</div>
 					
 					<div className="absolute left-1/2 bottom-0 -translate-x-1/2 w-full h-[400px] flex justify-center items-end overflow-visible pointer-events-none">
-						{TARO_CARDS.map((card, i) => {
-							const total = TARO_CARDS.length;
+						{majorCards.map((card, i) => {
+							const total = majorCards.length;
 							const index = i - (total - 1) / 2;
-							const angle = index * 4.2;
+							const angle = index * 5.2;
 
 							return (
 								<div 
