@@ -459,7 +459,7 @@ const App = () => {
 							<Star size={14} /><Moon size={14} /><Sun size={14} />
 						</div>
 						<p className="text-[10px] tracking-[0.7em] text-white/10 uppercase font-light">
-							&copy; 2024 ARCANA ORACLE &bull; DIVINE WISDOM FROM THE COSMOS
+							&copy; 2026 ARCANA ORACLE &bull; DIVINE WISDOM FROM THE COSMOS
 						</p>
 					</footer>
 				</div>
