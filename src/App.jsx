@@ -2,9 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { Moon, Star, Sun, Sparkles, ChevronLeft, Info, BookOpen, Send, RefreshCw } from 'lucide-react';
 
-/**
- * 22 Major Arcana Data
- */
 const TARO_CARDS = [
 	{ id: 'm0', num: '0', name: 'The Fool', type: 'Major', symbol: '✧', message: '두려움 없는 순수한 발걸음이 새로운 길을 만듭니다.', keywords: ['자유', '시작', '순수', '모험'], desc: '새로운 여정의 시작을 알리는 카드입니다. 미지의 세계를 향해 나아가세요.' },
 	{ id: 'm1', num: 'I', name: 'The Magician', type: 'Major', symbol: '☿', message: '당신 안에 잠든 무한한 창조의 가능성을 믿으세요.', keywords: ['창조', '능력', '자신감', '실행력'], desc: '당신은 필요한 모든 도구를 이미 갖추고 있습니다. 의지력을 발휘할 때입니다.' },
@@ -196,7 +193,7 @@ const ReadingView = ({ setView }) => {
 						<Sparkles size={16} className="text-purple-400 animate-pulse" />
 						<span className="text-[11px] tracking-[0.3em] text-purple-300 uppercase font-medium">Sacred Inquiry</span>
 					</div>
-					<h2 className="text-5xl font-serif italic mb-8 text-white/90">어떤 고민이 당신의 밤을 밝히고 있나요?</h2>
+					<h2 className="text-5xl font-serif italic mb-8 text-white/90">어떤 고민이 당신의 밤을<br/>밝히고 있나요?</h2>
 					<p className="text-white/30 mb-16 text-sm font-light leading-relaxed">당신의 의식 속에 머무는 고민을 적어주세요.<br/>진심 어린 질문일수록 별들의 대답은 선명해집니다.</p>
 					
 					<div className="relative group max-w-xl mx-auto">
@@ -217,7 +214,6 @@ const ReadingView = ({ setView }) => {
 				</div>
 			)}
 
-			{/* Shuffle Phase */}
 			{step === 'shuffle' && (
 				<div className="h-[60vh] w-full flex flex-col items-center justify-center animate-in">
 					<div className="text-center mb-16 animate-pulse">
@@ -236,7 +232,6 @@ const ReadingView = ({ setView }) => {
 				</div>
 			)}
 
-			{/* Pick Phase (Improved Semi-Circle Fan) */}
 			{step === 'pick' && (
 				<div className="w-full h-screen flex flex-col items-center justify-start animate-in overflow-hidden relative">
 					<div className="text-center mt-20 mb-10 z-20">
@@ -244,12 +239,10 @@ const ReadingView = ({ setView }) => {
 						<p className="text-white/20 text-[10px] tracking-[0.4em] uppercase font-bold">당신의 무의식이 이끄는 곳에 해답이 있습니다</p>
 					</div>
 					
-					{/* 카드 컨테이너: 간격과 위치 조정 */}
 					<div className="absolute left-1/2 bottom-0 -translate-x-1/2 w-full h-[400px] flex justify-center items-end overflow-visible pointer-events-none">
 						{TARO_CARDS.map((card, i) => {
 							const total = TARO_CARDS.length;
 							const index = i - (total - 1) / 2;
-							// 간격을 더 좁게 조정 (5.5 -> 4.2)
 							const angle = index * 4.2;
 
 							return (
@@ -261,15 +254,12 @@ const ReadingView = ({ setView }) => {
 										zIndex: i,
 										width: '110px',
 										height: '170px',
-										// 회전 중심축 길이를 줄여 곡률을 약간 더 가파르게 조정
 										transformOrigin: '50% 800px',
-										// 전체 위치를 밑으로 약간 내림 (-450px -> -380px)
 										transform: `translate(-50%, -380px) rotate(${angle}deg)`,
 										left: '50%',
 										bottom: '0'
 									}}
 								>
-									{/* 카드 본체 */}
 									<div className="w-full h-full rounded-xl border border-white/10 bg-gradient-to-b from-[#1a1a3a] to-[#050508] shadow-[-5px_0_20px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_60px_rgba(139,92,246,0.6)] group-hover:-translate-y-32 group-hover:scale-110 group-hover:border-purple-400 group-hover:z-[1000] transition-all duration-500 relative overflow-hidden flex items-center justify-center">
 										<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(139,92,246,0.1)_0%,_transparent_70%)]" />
 										<Moon className="w-8 h-8 text-white/5 group-hover:text-purple-400 transition-all" />
@@ -284,7 +274,6 @@ const ReadingView = ({ setView }) => {
 				</div>
 			)}
 
-			{/* Result Phase */}
 			{step === 'result' && selectedCard && (
 				<div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center gap-20 py-10 animate-in">
 					{/* Result Card */}
@@ -301,7 +290,6 @@ const ReadingView = ({ setView }) => {
 						</div>
 					</div>
 
-					{/* Interpretation */}
 					<div className="flex-1 space-y-10">
 						<div className="space-y-4">
 							<div className="flex items-center gap-4 text-white/20">
