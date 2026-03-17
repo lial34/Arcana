@@ -19,12 +19,12 @@ const TARO_CARDS = [
 	{ id: 'm13', num: 'XIII', name: 'Death', type: 'Major', symbol: '♏', message: '낡은 허물을 벗어야 비로소 새로운 생명이 잉태됩니다.', keywords: ['종결', '변화', '새로운시작', '이별'], desc: '두려워하지 마세요. 하나의 끝은 더 나은 시작을 위한 필수적인 과정입니다.' },
 	{ id: 'm14', num: 'XIV', name: 'Temperance', type: 'Major', symbol: '♐', message: '서로 다른 두 물줄기가 만나 완벽한 조화를 이룹니다.', keywords: ['절제', '조화', '균형', '정화'], desc: '중용의 미덕을 발휘하여 극단을 피하고 조화로운 합의점을 찾으세요.' },
 	{ id: 'm15', num: 'XV', name: 'The Devil', type: 'Major', symbol: '♑', message: '유혹의 사슬을 끊는 열쇠는 이미 당신 손에 쥐어져 있습니다.', keywords: ['속박', '유혹', '집착', '물질적욕망'], desc: '자신을 옭아매고 있는 집착이 무엇인지 직면하고 자유를 되찾으세요.' },
-	{ id: 'm16', num: 'XVI', name: 'The Tower', symbol: '⚡', message: '견고했던 탑이 무너진 자리 위로 진실의 빛이 쏟아집니다.', keywords: ['충격', '급격한변화', '파괴', '진실의폭로'], desc: '예상치 못한 변화가 닥칠 수 있으나, 이는 거짓된 기반을 허무는 과정입니다.' },
-	{ id: 'm17', num: 'XVII', name: 'The Star', symbol: '♒', message: '어두운 밤하늘을 수놓은 별들이 당신의 희망이 됩니다.', keywords: ['희망', '영감', '치유', '낙관주의'], desc: '길었던 어둠이 걷히고 희망의 별이 뜹니다. 우주의 에너지를 믿고 나아가세요.' },
-	{ id: 'm18', num: 'XVIII', name: 'The Moon', symbol: '🌙', message: '안개 속 모호함은 당신의 무의식이 건네는 신비한 대화입니다.', keywords: ['혼란', '불안', '환상', '잠재력'], desc: '직관을 믿되 환상에 빠지지 마세요. 내면의 두려움을 직면할 때입니다.' },
-	{ id: 'm19', num: 'XIX', name: 'The Sun', symbol: '☀', message: '환한 태양처럼 당신의 삶에 눈부신 축복이 가득합니다.', keywords: ['성공', '활력', '기쁨', '명확함'], desc: '모든 것이 명확해지고 활력이 넘칩니다. 당신의 앞날이 태양처럼 밝습니다.' },
-	{ id: 'm20', num: 'XX', name: 'Judgement', symbol: '🎺', message: '새로운 소명이 당신의 영혼을 깨우는 나팔소리를 울립니다.', keywords: ['부활', '결단', '해방', '새로운소명'], desc: '과거를 딛고 일어서야 할 때입니다. 새로운 변화의 부름에 응답하세요.' },
-	{ id: 'm21', num: 'XXI', name: 'The World', symbol: '🌍', message: '마침내 완성된 당신의 세계가 우주와 하나가 됩니다.', keywords: ['완성', '통합', '성취', '여행'], desc: '하나의 주기가 완성되었습니다. 성취를 만끽하고 새로운 도약을 준비하세요.' },
+	{ id: 'm16', num: 'XVI', name: 'The Tower', type: 'Major', symbol: '⚡', message: '견고했던 탑이 무너진 자리 위로 진실의 빛이 쏟아집니다.', keywords: ['충격', '급격한변화', '파괴', '진실의폭로'], desc: '예상치 못한 변화가 닥칠 수 있으나, 이는 거짓된 기반을 허무는 과정입니다.' },
+	{ id: 'm17', num: 'XVII', name: 'The Star', type: 'Major', symbol: '♒', message: '어두운 밤하늘을 수놓은 별들이 당신의 희망이 됩니다.', keywords: ['희망', '영감', '치유', '낙관주의'], desc: '길었던 어둠이 걷히고 희망의 별이 뜹니다. 우주의 에너지를 믿고 나아가세요.' },
+	{ id: 'm18', num: 'XVIII', name: 'The Moon', type: 'Major', symbol: '🌙', message: '안개 속 모호함은 당신의 무의식이 건네는 신비한 대화입니다.', keywords: ['혼란', '불안', '환상', '잠재력'], desc: '직관을 믿되 환상에 빠지지 마세요. 내면의 두려움을 직면할 때입니다.' },
+	{ id: 'm19', num: 'XIX', name: 'The Sun', type: 'Major', symbol: '☀', message: '환한 태양처럼 당신의 삶에 눈부신 축복이 가득합니다.', keywords: ['성공', '활력', '기쁨', '명확함'], desc: '모든 것이 명확해지고 활력이 넘칩니다. 당신의 앞날이 태양처럼 밝습니다.' },
+	{ id: 'm20', num: 'XX', name: 'Judgement', type: 'Major', symbol: '🎺', message: '새로운 소명이 당신의 영혼을 깨우는 나팔소리를 울립니다.', keywords: ['부활', '결단', '해방', '새로운소명'], desc: '과거를 딛고 일어서야 할 때입니다. 새로운 변화의 부름에 응답하세요.' },
+	{ id: 'm21', num: 'XXI', name: 'The World', type: 'Major', symbol: '🌍', message: '마침내 완성된 당신의 세계가 우주와 하나가 됩니다.', keywords: ['완성', '통합', '성취', '여행'], desc: '하나의 주기가 완성되었습니다. 성취를 만끽하고 새로운 도약을 준비하세요.' },
 
 	// Minor Arcana
 	{ id: 'm22', num: 'Wand I', name: 'Ace of Wands', type: 'Minor', symbol: '⚚', message: '새로운 열정의 불꽃이 당신의 길을 밝힙니다.', keywords: ['시작', '에너지', '영감', '창의성'], desc: '무언가 새로운 일을 시작할 강력한 동기부여와 창조적인 에너지가 솟구치는 시기입니다.' },
