@@ -309,7 +309,7 @@ const ReadingView = ({ setView }) => {
 						{majorCards.map((card, i) => {
 							const total = majorCards.length;
 							const index = i - (total - 1) / 2;
-							const angle = index * 5.2;
+							const angle = index * 4.2;
 
 							return (
 								<div 
