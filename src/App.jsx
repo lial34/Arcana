@@ -126,7 +126,7 @@ const HomeView = ({ todayCard, setView }) => {
 	return (
 		<div className="animate-in fade-in duration-1000">
 			<header className="relative min-h-[100vh] flex items-center justify-center pt-20 overflow-hidden">
-				<div className={`fixed left-4 sm:left-8 lg:left-24 top-[20%] sm:top-[35%] lg:top-[40%] -translate-y-1/2 w-40 sm:w-48 lg:w-64 z-30 transition-all duration-700 delay-100 pointer-events-none ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
+				<div className={`fixed left-4 sm:left-8 lg:left-24 top-[10%] sm:top-[25%] lg:top-[35%] -translate-y-1/2 w-40 sm:w-48 lg:w-64 z-30 transition-all duration-700 delay-100 pointer-events-none ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
 					<div className="flex items-center gap-3 mb-6 text-purple-400/60 uppercase tracking-[0.3em] text-[10px] font-bold">
 						<BookOpen size={14} /> <span>Intuition</span>
 					</div>
@@ -139,7 +139,7 @@ const HomeView = ({ todayCard, setView }) => {
 					</div>
 				</div>
 
-				<div className={`fixed right-4 sm:right-8 lg:right-24 top-[20%] sm:top-[35%] lg:top-[40%] -translate-y-1/2 w-40 sm:w-48 lg:w-64 z-30 transition-all duration-700 delay-100 text-right pointer-events-none ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
+				<div className={`fixed right-4 sm:right-8 lg:right-24 top-[10%] sm:top-[25%] lg:top-[35%] -translate-y-1/2 w-40 sm:w-48 lg:w-64 z-30 transition-all duration-700 delay-100 text-right pointer-events-none ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
 					<div className="flex items-center justify-end gap-3 mb-6 text-indigo-400/60 uppercase tracking-[0.3em] text-[10px] font-bold">
 						<span>Structure</span> <Info size={14} />
 					</div>
@@ -171,11 +171,11 @@ const HomeView = ({ todayCard, setView }) => {
 								</div>
 							</div>
 							<div className="absolute inset-0 backface-hidden rotate-y-180 rounded-2xl bg-[#0a0a12] border border-white/20 shadow-[0_0_60px_rgba(139,92,246,0.15)] p-1">
-								<div className="w-full h-full border border-white/5 rounded-xl bg-gradient-to-b from-[#12121e] to-[#050508] flex flex-col items-center justify-between py-12 px-6 text-white/90">
-									<span className="text-[10px] font-bold tracking-[0.5em] uppercase text-purple-400/80">{todayCard?.type}</span>
+								<div className="w-full h-full border border-white/5 rounded-xl bg-gradient-to-b from-[#12121e] to-[#050508] flex flex-col items-center justify-between py-8 sm:py-10 lg:py-12 px-4 sm:px-5 lg:px-6 text-white/90">
+									<span className="text-[8px] sm:text-[9px] lg:text-[10px] font-bold tracking-[0.5em] uppercase text-purple-400/80">{todayCard?.type}</span>
 									<div className="flex flex-col items-center">
-										<span className="text-8xl mb-8 text-purple-50 text-glow font-serif">{todayCard?.symbol}</span>
-										<h3 className="text-2xl font-serif uppercase tracking-[0.2em] text-center text-white/90">{todayCard?.name}</h3>
+										<span className="text-6xl sm:text-7xl lg:text-8xl mb-8 text-purple-50 text-glow font-serif">{todayCard?.symbol}</span>
+										<h3 className="text-lg sm:text-xl lg:text-2xl font-serif uppercase tracking-[0.2em] text-center text-white/90">{todayCard?.name}</h3>
 									</div>
 									<div className="opacity-40 flex gap-2 text-purple-400"><Star size={12} fill="currentColor" /><Star size={12} fill="currentColor" /></div>
 								</div>
