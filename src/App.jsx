@@ -126,7 +126,7 @@ const HomeView = ({ todayCard, setView }) => {
 	return (
 		<div className="animate-in fade-in duration-1000">
 			<header className="relative min-h-[100vh] flex items-center justify-center pt-20 overflow-hidden">
-				<div className={`fixed left-12 lg:left-24 top-[40%] -translate-y-1/2 w-64 z-30 transition-all duration-700 delay-100 pointer-events-none ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
+				<div className={`fixed left-4 sm:left-8 lg:left-24 top-[20%] sm:top-[35%] lg:top-[40%] -translate-y-1/2 w-40 sm:w-48 lg:w-64 z-30 transition-all duration-700 delay-100 pointer-events-none ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
 					<div className="flex items-center gap-3 mb-6 text-purple-400/60 uppercase tracking-[0.3em] text-[10px] font-bold">
 						<BookOpen size={14} /> <span>Intuition</span>
 					</div>
@@ -139,7 +139,7 @@ const HomeView = ({ todayCard, setView }) => {
 					</div>
 				</div>
 
-				<div className={`fixed right-12 lg:right-24 top-[40%] -translate-y-1/2 w-64 z-30 transition-all duration-700 delay-100 text-right pointer-events-none ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
+				<div className={`fixed right-4 sm:right-8 lg:right-24 top-[20%] sm:top-[35%] lg:top-[40%] -translate-y-1/2 w-40 sm:w-48 lg:w-64 z-30 transition-all duration-700 delay-100 text-right pointer-events-none ${isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
 					<div className="flex items-center justify-end gap-3 mb-6 text-indigo-400/60 uppercase tracking-[0.3em] text-[10px] font-bold">
 						<span>Structure</span> <Info size={14} />
 					</div>
@@ -160,7 +160,7 @@ const HomeView = ({ todayCard, setView }) => {
 				</div>
 
 				<div className="relative z-20 flex flex-col items-center group transition-transform duration-700" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-					<div className={`w-64 h-[24rem] relative transition-all duration-1000 transform-style-3d group-hover:rotate-y-180 animate-float ${isHovered ? 'scale-110 shadow-[0_0_100px_rgba(139,92,246,0.1)]' : ''}`} style={{ perspective: '2000px' }}>
+					<div className={`w-40 sm:w-48 md:w-56 lg:w-64 h-[18rem] sm:h-[20rem] md:h-[22rem] lg:h-[24rem] relative transition-all duration-1000 transform-style-3d group-hover:rotate-y-180 animate-float ${isHovered ? 'scale-110 shadow-[0_0_100px_rgba(139,92,246,0.1)]' : ''}`} style={{ perspective: '2000px' }}>
 						<div className="relative w-full h-full transform-style-3d transition-transform duration-1000 group-hover:rotate-y-180">
 							<div className="absolute inset-0 backface-hidden rounded-2xl border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.8)] overflow-hidden bg-[#0a0a12]">
 								<div className="w-full h-full flex flex-col items-center justify-center bg-[radial-gradient(circle_at_center,_#1a1a3a_0%,_transparent_80%)]">
