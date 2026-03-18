@@ -92,7 +92,7 @@ const TARO_CARDS = [
 ];
 
 const Navigation = ({ setView }) => (
-	<nav className="fixed top-0 w-full z-[70] px-8 md:px-16 py-8 flex justify-between items-center bg-gradient-to-b from-black/80 to-transparent backdrop-blur-[2px]">
+	<nav className="fixed top-0 w-full z-[70] px-4 sm:px-6 md:px-8 lg:px-16 py-8 flex justify-between items-center bg-gradient-to-b from-black/80 to-transparent backdrop-blur-[2px]">
 		<div className="flex items-center gap-3 cursor-pointer group" onClick={() => setView('home')}>
 			<div className="w-9 h-9 rounded-full bg-gradient-to-tr from-purple-600 to-indigo-400 flex items-center justify-center shadow-[0_0_20px_rgba(139,92,246,0.4)] transition-transform group-hover:scale-110">
 				<Moon size={18} className="text-white" fill="white" />
