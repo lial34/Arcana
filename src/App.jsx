@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { Moon, Star, Sun, Sparkles, ChevronLeft, Info, BookOpen, Send, RefreshCw } from 'lucide-react';
 
-const TARO_CARDS = [
+const TARO_CARDS = [ // Taro_cards data.js 로 분할해서 최적화
 	{ id: 'm0', num: '0', name: 'The Fool', type: 'Major', symbol: '✧', message: '두려움 없는 순수한 발걸음이 새로운 길을 만듭니다.', keywords: ['자유', '시작', '순수', '모험'], desc: '새로운 여정의 시작을 알리는 카드입니다. 미지의 세계를 향해 나아가세요.' },
 	{ id: 'm1', num: 'I', name: 'The Magician', type: 'Major', symbol: '☿', message: '당신 안에 잠든 무한한 창조의 가능성을 믿으세요.', keywords: ['창조', '능력', '자신감', '실행력'], desc: '당신은 필요한 모든 도구를 이미 갖추고 있습니다. 의지력을 발휘할 때입니다.' },
 	{ id: 'm2', num: 'II', name: 'The High Priestess', type: 'Major', symbol: '☾', message: '침묵 속에서 들려오는 내면의 목소리에 집중하세요.', keywords: ['직관', '무의식', '지혜', '신비'], desc: '겉으로 드러나지 않은 진실이 당신의 직관을 통해 밝혀질 것입니다.' },
@@ -118,9 +118,9 @@ const SplashView = ({ isTransitioning, splashContainer }) => (
 			</div>
 		</div>
 	</div>
-);
+); // 여기까지 타 파일 분할 (spalsh)
 
-const HomeView = ({ todayCard, setView }) => {
+const HomeView = ({ todayCard, setView }) => { // 여기서부터 메인 페이지로 main.jsx 로 세이브 하면 될 것 같음.
 	const [isHovered, setIsHovered] = useState(false);
 
 	return (
@@ -396,7 +396,7 @@ const ReadingView = ({ setView }) => {
 	);
 };
 
-const App = () => {
+const App = () => { // 여기를 app.jsx 로 세이브
 	const [view, setView] = useState('splash');
 	const [showSplash, setShowSplash] = useState(true);
 	const [isTransitioning, setIsTransitioning] = useState(false);
